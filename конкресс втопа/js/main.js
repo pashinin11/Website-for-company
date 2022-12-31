@@ -1,10 +1,13 @@
 let who = 3
+let range_1 = document.getElementById('slidewho')
+let range_2 = document.getElementById('range_power')
+let textVtopa = document.getElementById('result_top');
 let time = 0
 let men = 6
 let opciitopki = [
 	{
 		name: 'gnom',
-		text: 'на доз с пледиком+шишки с поцелуями+поход по музеям'
+		text: 'на доз с пледиком'
 	},
 	{
 		name: 'goose',
@@ -16,19 +19,79 @@ let opciitopki = [
 	},
 	{
 		name: 'cts',
-		text: 'откуда ты знаешь про дадова?+ты сейчас шаву ешь?(при условии поедания шавы)+напомнить про чела в мусорке у ЦДТ'
+		text: 'ты сейчас шаву ешь?(при условии поедания шавы)'
 	},
 	{
 		name: 'ant',
-		text: 'ты сейчас ссышь?(при условии если собака рядом)+сколько банок жиж?+нахуя ездил за 100 дней до экза?'
+		text: 'ты сейчас ссышь?(при условии если собака рядом)'
 	},
 	{
 		name: 'bagr',
-		text: 'ббв+как выбраться с коменды?+бритье'
+		text: 'как выбраться с коменды?'
 	},
 	{
 		name: 'fash',
-		text: 'когда бухал ласт раз? сколько дней в отрезвителе?'
+		text: 'когда бухал ласт раз?'
+	}
+]
+let opciitopki2 = [
+	{
+		name: 'gnom',
+		text: 'шишки в лесу'
+	},
+	{
+		name: 'goose',
+		text: 'топок гуся нет'
+	},
+	{
+		name: 'rasl',
+		text: 'рассказ родителям про наркоту'
+	},
+	{
+		name: 'cts',
+		text: 'откуда инфа про дадова'
+	},
+	{
+		name: 'ant',
+		text: 'сколько банок жиж'
+	},
+	{
+		name: 'bagr',
+		text: 'ббв'
+	},
+	{
+		name: 'fash',
+		text: 'сколько дней в отрезвителе'
+	}
+]
+let opciitopki3 = [
+	{
+		name: 'gnom',
+		text: 'упомянуть походы в музей+ласт джагу'
+	},
+	{
+		name: 'goose',
+		text: 'топок гуся нет'
+	},
+	{
+		name: 'rasl',
+		text: 'кошмарить Диану'
+	},
+	{
+		name: 'cts',
+		text: 'упомянуть про чела у мусорки цдт'
+	},
+	{
+		name: 'ant',
+		text: 'нахуй поехал за 100 дней до экза в пиктер'
+	},
+	{
+		name: 'bagr',
+		text: 'брил жопу?'
+	},
+	{
+		name: 'fash',
+		text: 'Зачем кристиночке нес учебники в СОШ номер 1?'
 	}
 ]
 function chooseWho(v) {
@@ -86,10 +149,39 @@ function checkIfChecked() {
 
 	update()
 }
+function fun1() {
+	if (range_2.value == 1) {
+		textVtopa.textContent = 'Немного притопить';
+		power = 0;
+	}
+
+	if (range_2.value == 2) {
+		textVtopa.textContent = 'ГМТ';
+		power = 100;
+	}
+
+	if (range_2.value == 3) {
+		textVtopa.textContent = 'Топить пока не ливнет';
+		power = 200;
+	}
+
+	update()
+};
 
 function update() {
 	let text = document.getElementById('over')
 	let text1 = (men * (opciitopki[who] + time))
-	text.innerHTML = `${opciitopki[who].text}`
+	let text2 = (men * (opciitopki2[who] + time))
+	let text3 = (men * (opciitopki3[who] + time))
+	if (power == 0) {
+		text.innerHTML = `${opciitopki[who].text}`
+	}
+	if (power == 100) {
+		text.innerHTML = `${opciitopki2[who].text}`
+	}
+	if (power == 200) {
+		text.innerHTML = `${opciitopki3[who].text}`
+	}
+
 }
 
