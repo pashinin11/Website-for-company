@@ -3,7 +3,20 @@
 	width: 0px;
 	height: 0px;
 	display: inline;
-	background-image: url(../img/ant.svg),url(../img/ant1.svg),url(../img/rasl.svg),url(../img/rasl2.svg),url(../img/gnom.svg),url(../img/gnom1.svg),url(../img/fash.svg),url(../img/fash1.svg),url(../img/goose.svg),url(../img/goose2.svg),url(../img/bagr.svg),url(../img/bagr1.svg),url(../img/cts.svg),url(../img/cts1.svg);
+	background-image: url(../img/members/ant.png),
+	url(../img/members/ant1.png),
+	url(../img/members/rasl.png),
+	url(../img/members/rasl2.png),
+	url(../img/members/gnom.png),
+	url(../img/members/gnom1.png),
+	url(../img/members/fash.png),
+	url(../img/members/fash1.png),
+	url(../img/members/goose.png),
+	url(../img/members/goose2.png),
+	url(../img/members/bagr.png),
+	url(../img/members/bagr1.png),
+	url(../img/members/cts.png),
+	url(../img/members/cts1.png);
 }
 
 *{
@@ -176,72 +189,72 @@ background-repeat: no-repeat;
 }
 
 .rasl{
-background-image: url('../img/rasl2.svg')
+background-image: url('../img/members/rasl2.png')
 }
 
 .gnom{
-background-image: url('../img/gnom1.svg')
+background-image: url('../img/members/gnom1.png')
 }
 
 .goose{
-background-image: url('../img/goose.svg')
+background-image: url('../img/members/goose.png')
 }
 
 .fash{
-background-image: url('../img/fash1.svg')
+background-image: url('../img/members/fash1.png')
 }
 
 .bagr{
-background-image: url('../img/bagr1.svg')
+background-image: url('../img/members/bagr1.png')
 }
 .cts{
-background-image: url('../img/cts1.svg')
+background-image: url('../img/members/cts1.png')
 }
 .bagr{
-background-image: url('../img/bagr1.svg')
+background-image: url('../img/members/bagr1.png')
 }
 .ant{
-background-image: url('../img/ant1.svg')
+background-image: url('../img/members/ant1.png')
 }
 
 .rasl_checked, .rasl:hover, .rasl:active{
 filter: none;
 opacity: 1;
-background-image: url('../img/rasl.svg')
+background-image: url('../img/members/rasl.png')
 }
 .cts_checked, .cts:hover, .cts:active{
 filter: none;
 opacity: 1;
-background-image: url('../img/cts.svg')
+background-image: url('../img/members/cts.png')
 }
 
 .goose_checked, .goose:hover, .goose:active{
 filter: none;
 opacity: 1;
-background-image: url('../img/goose2.svg')
+background-image: url('../img/members/goose2.png')
 }
 
 .fash_checked, .fash:hover, .fash:active{
 filter: none;
 opacity: 1;
-background-image: url('../img/fash.svg')
+background-image: url('../img/members/fash.png')
 }
 
 .bagr_checked, .bagr:hover, .bagr:active{
 filter: none;
 opacity: 1;
-background-image: url('../img/bagr.svg')
+background-image: url('../img/members/bagr.png')
 }
 
 .gnom_checked, .gnom:hover, .gnom:active{
 filter: none;
 opacity: 1;
-background-image: url('../img/gnom.svg')
+background-image: url('../img/members/gnom.png')
 }
 .ant_checked, .ant:hover, .ant:active{
 filter: none;
 opacity: 1;
-background-image: url('../img/ant.svg')
+background-image: url('../img/members/ant.png')
 }
 
 .over_container h3{
